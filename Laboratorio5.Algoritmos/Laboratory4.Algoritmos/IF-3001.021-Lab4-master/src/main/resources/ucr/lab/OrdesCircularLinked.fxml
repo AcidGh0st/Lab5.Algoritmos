@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="536.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdesCircularLinkedController">
+   <children>
+      <Pane prefHeight="104.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="104.0" prefWidth="600.0" text="Orders (Circular Linked List)">
+               <font>
+                  <Font name="Forte" size="49.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="93.0" prefHeight="283.0" prefWidth="600.0">
+         <children>
+            <TableView layoutY="-5.0" prefHeight="289.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="idTable" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="dateTable" prefWidth="104.0" text="DATE" />
+                  <TableColumn fx:id="productTable" prefWidth="183.0" text="PRODUCT NAME" />
+                  <TableColumn fx:id="quantityTable" prefWidth="127.0" text="QUANTITY" />
+                  <TableColumn fx:id="priceTable" prefWidth="110.0" text="TOTAL PRICE" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutY="388.0" prefHeight="149.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="addButton" layoutX="5.0" layoutY="13.0" mnemonicParsing="false" onAction="#addAction" prefHeight="42.0" prefWidth="109.0" text="Add" />
+            <Button fx:id="sortIDButton" layoutX="126.0" layoutY="13.0" mnemonicParsing="false" onAction="#sortyNameAction" prefHeight="42.0" prefWidth="109.0" text="Sorty by ID" />
+            <Button fx:id="sortName" layoutX="246.0" layoutY="13.0" mnemonicParsing="false" onAction="#sortyNameAction" prefHeight="42.0" prefWidth="109.0" text="Sort by Name" />
+            <Button fx:id="containsButton" layoutX="364.0" layoutY="13.0" mnemonicParsing="false" onAction="#containsAction" prefHeight="42.0" prefWidth="109.0" text="Contains" />
+            <Button fx:id="sizeButton" layoutX="482.0" layoutY="13.0" mnemonicParsing="false" onAction="#sizeAction" prefHeight="42.0" prefWidth="109.0" text="Size" />
+            <Button fx:id="getPrevTable" layoutX="126.0" layoutY="75.0" mnemonicParsing="false" onAction="#getPrevAction" prefHeight="42.0" prefWidth="109.0" text="Get Prev" />
+            <Button fx:id="getNextButton" layoutX="5.0" layoutY="75.0" mnemonicParsing="false" onAction="#getNextAction" prefHeight="42.0" prefWidth="109.0" text="Get Next" />
+            <Button fx:id="removeButton" layoutX="246.0" layoutY="75.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="42.0" prefWidth="109.0" text="Remove" />
+            <Button fx:id="removeFirtsButton" layoutX="364.0" layoutY="75.0" mnemonicParsing="false" onAction="#removeFirtsAction" prefHeight="42.0" prefWidth="109.0" text="Remove Firts" />
+            <Button fx:id="clearButton" layoutX="482.0" layoutY="75.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="42.0" prefWidth="109.0" text="Clear" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
